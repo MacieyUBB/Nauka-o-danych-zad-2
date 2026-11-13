@@ -23,6 +23,12 @@ Analiza zawiera:
 
 Po każdej analizie skrypt wypisuje obserwację lub interpretację wyniku.
 
+## Wynik końcowy
+
+Analiza nie usuwa automatycznie wartości odstających. Zostają one oznaczone
+w danych, aby można było je dodatkowo ocenić zamiast usuwać potencjalnie
+rzadkie, ale prawdziwe obserwacje.
+
 ## Struktura projektu
 
 ```text
