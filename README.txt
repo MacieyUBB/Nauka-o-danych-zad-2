@@ -43,8 +43,7 @@ python .\zadanie.py
 
 Program pobierze Housing.csv z Kaggle, wykona analizy, zapisze dane
 z dodatkowymi kolumnami do housing_po_analizie.csv i zapisze wykresy
-w katalogu wykresy. Wykresy interaktywne sa plikami HTML, a ich statyczne
-kopie sa zapisane jako PNG.
+w katalogu wykresy jako pliki PNG.
 
 WARTOSCI ODSTAJACE
 

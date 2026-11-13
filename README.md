@@ -56,9 +56,7 @@ python .\zadanie.py
 
 Program pobierze plik `Housing.csv`, wykona wszystkie analizy, zapisze
 oczyszczone dane z dodatkowymi wynikami do `housing_po_analizie.csv` oraz
-zapisze wykresy w katalogu `wykresy`. Wykresy Plotly i Altair są zapisane
-zarówno jako interaktywne pliki HTML, jak i statyczne kopie PNG. Pozostałe
-wykresy są zapisane jako PNG.
+zapisze wykresy w katalogu `wykresy` jako pliki PNG.
 
 ## Interpretacja
 

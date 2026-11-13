@@ -105,7 +105,6 @@ def main() -> None:
         title="Wartości odstające według Isolation Forest",
         labels={"area": "Powierzchnia", "price": "Cena"},
     )
-    wykres_odstajacych.write_html(KATALOG_WYKRESOW / "02_wartosci_odstajace.html")
     rysunek, osie = plt.subplots(figsize=(8, 5))
     sns.scatterplot(
         data=df,
@@ -133,7 +132,6 @@ def main() -> None:
     wykres_pca = px.scatter(
         df, x="PC1", y="PC2", color="price", title="PCA: dwie główne składowe"
     )
-    wykres_pca.write_html(KATALOG_WYKRESOW / "03_pca.html")
     rysunek, osie = plt.subplots(figsize=(8, 5))
     sns.scatterplot(data=df, x="PC1", y="PC2", hue="price", palette="viridis", ax=osie)
     osie.set(title="PCA: dwie główne składowe", xlabel="PC1", ylabel="PC2")
@@ -180,13 +178,12 @@ def main() -> None:
         )
         .interactive()
     )
-    altair_chart.save(KATALOG_WYKRESOW / "06_wykres_altair.html")
     rysunek, osie = plt.subplots(figsize=(8, 5))
     sns.scatterplot(data=df, x="area", y="price", hue="bedrooms", palette="deep", ax=osie)
     osie.set(title="Wykres zależności powierzchni i ceny",
              xlabel="Powierzchnia", ylabel="Cena")
     zapisz_wykres(rysunek, "06_wykres_altair.png")
-    print("Wykres zapisano w pliku HTML; można go przybliżać i odczytywać tooltipy.")
+    print("Wykres Altair przygotowano, a jego statyczną wersję zapisano jako PNG.")
 
     print("\n--- 8. Macierz korelacji ---")
     oryginalne_cechy_liczbowe = ["price", "area", "bedrooms", "bathrooms", "stories", "parking"]
